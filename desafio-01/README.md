@@ -8,8 +8,4 @@
 
 - Todo o foco do projeto é voltado para HTML e CSS
 
-# Sobre o projeto
-
-- Para conhecer o desafio, [clique aqui](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=139%3A51)
-
-- Para conhecer o projeto final, [clique aqui](https://codepen.io/wilsonsdr/full/YzLbWJN)
+- Para conhecer o projeto, [clique aqui](https://codepen.io/wilsonsdr/full/YzLbWJN)

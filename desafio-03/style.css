@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background-color: #d7d4ff;
+  padding: 80px;
+}
+
+.introducao .descricao {
+  display: grid;
+  gap: 10px;
+}
+
+.introducao .descricao h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 47px;
+  color: #2b2b2b;
+}
+
+.introducao .descricao p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  color: #555555;
+  max-width: 40ch;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  background: #6c63ff;
+  color: #ffffff;
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+}
+
+.botao-descricao {
+  place-self: start;
+}
+
+/* introdução */
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  align-items: center;
+  justify-content: space-between;
+  margin: 120px 80px;
+  gap: 80px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 222px auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card .descricao {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 30px;
+  gap: 20px;
+}
+
+.card .descricao h3 {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2b2b2b;
+}
+
+.card .descricao p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #555555;
+}
+
+/* main */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #d7d5ff;
+  padding: 80px;
+  gap: 60px;
+}
+
+.footer h1 {
+  text-align: center;
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #2b2b2b;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form div {
+  display: grid;
+  grid-template-columns: 470px;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(110, 114, 117, 0.74);
+  padding: 20px;
+}
+
+/* footer */
+
+@media (max-width: 1400px) {
+  .main {
+    grid-template-columns: repeat(2, 340px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    place-items: center;
+  }
+  .descricao {
+    text-align: center;
+  }
+  .botao-descricao {
+    place-self: center;
+  }
+  .main {
+    grid-template-columns: repeat(1, 340px);
+  }
+}
+
+@media (max-width: 675px) {
+  .introducao img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 675px) {
+  .introducao img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 580px) {
+  .introducao img {
+    width: 300px;
+  }
+  .main {
+    grid-template-columns: repeat(1, 300px);
+  }
+  .form div {
+    grid-template-columns: 350px;
+  }
+}

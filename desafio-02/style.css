@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  text-align: center;
+}
+
+.desconto {
+  background: #181818;
+  color: #f9f9f9;
+  padding: 10px;
+}
+
+.titulo {
+  background: #f9f9f9;
+  padding: 10px;
+}
+
+.bg-img {
+  background: url("./img/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1.png")
+    no-repeat center top;
+  background-size: cover;
+  min-height: 378px;
+}
+
+.bg-color {
+  display: flex;
+  flex-direction: column;
+  padding: 140px 100px;
+  gap: 20px;
+  background-color: RGBA(0, 0, 0, 0.6);
+  min-height: 378px;
+  color: #f9f9f9;
+  text-align: left;
+}
+
+.bg-color p {
+  font-size: 18px;
+  line-height: 35px;
+  max-width: 40ch;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px;
+  gap: 20px;
+  text-align: center;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background: #ebe9ea;
+}
+
+.item img:hover {
+  rotate: 8deg;
+}
+
+.footer {
+  text-align: center;
+  background-color: #181818;
+  color: #f9f9f9;
+  padding: 10px;
+}
+
+@media (max-width: 1300px) {
+  .galeria {
+    grid-template-columns: repeat(3, 300px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .galeria {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+@media (max-width: 700px) {
+  .galeria {
+    grid-template-columns: repeat(1, 300px);
+  }
+}

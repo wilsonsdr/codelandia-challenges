@@ -8,7 +8,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.header {
+.introducao {
   text-align: center;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .bg-img {
-  background: url("./img/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1.png")
+  background: url("./img/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino-1.png")
     no-repeat center top;
   background-size: cover;
   min-height: 378px;
@@ -64,7 +64,7 @@ body {
   gap: 20px;
 }
 
-.item {
+.tenis {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +72,7 @@ body {
   background: #ebe9ea;
 }
 
-.item img:hover {
+.tenis img:hover {
   rotate: 8deg;
 }
 

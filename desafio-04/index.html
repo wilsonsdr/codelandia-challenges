@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio #04</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/04738758ea.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+
+  <section class="container">
+    <img src="./img/undraw-About-us-page-re-2jfm-1.svg" alt="pessoas">
+    <div class="login">
+      <div>
+        <p>Bem vindo de volta</p>
+        <h1>Faça login na sua conta</h1>
+        <form class="form" action="#" method="get">
+          <label for="nome">Email</label>
+          <input type="text" id="nome" placeholder="wilsonsdr@gmail.com">
+          <label for="senha">Senha</label>
+          <input type="text" id="senha" placeholder="**********">
+        </form>
+        <div class="opcoes">
+          <div class="lembrar">
+            <input id="check" type="radio">
+            <p onclick="marcar()">Lembre de mim</p>
+          </div>
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+        <button class="entrar">Entrar</button>
+        <button class="google"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Google-512.png" alt="#">Ou faça login com o Google</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let radioCheck;
+
+    function marcar() {
+      radioCheck = document.getElementById("check").checked = "true";
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-![Screenshot from 2022-10-20 14-25-05](https://user-images.githubusercontent.com/81364355/197017367-7cd99f7b-0b57-446e-b442-e1907a589620.png)
+![Screenshot from 2022-10-20 17-11-52](https://user-images.githubusercontent.com/81364355/197048845-41f62f74-2e0f-4bbb-b0a1-ce75dd17f229.png)
 
 # Descrição do projeto
 

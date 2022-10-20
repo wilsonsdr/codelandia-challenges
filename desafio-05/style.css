@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(130.02deg, #628e75 0.66%, #1a4855 83.32%)
+    no-repeat;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 120px;
+}
+
+.ola {
+  display: grid;
+}
+
+.rede-social {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  color: #f9f9f9;
+  margin-right: 80px;
+}
+
+.rede-social li:hover {
+  rotate: 10deg;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: flex-start;
+  padding: 0 120px;
+}
+
+.autor {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #f9f9f9;
+}
+
+.titulo {
+  font-weight: 900;
+  font-size: 68px;
+  line-height: 109%;
+  color: #f9f9f9;
+}
+
+.descricao {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: #f9f9f9;
+  max-width: 42ch;
+  margin-top: 20px;
+}
+
+.botao {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  margin-top: 40px;
+  padding: 8px 30px;
+  color: #ffffff;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.agora {
+  background: #658e76;
+}
+
+.agora:hover {
+  background: linear-gradient(179.98deg, #2e1e65 7.19%, #11082f 108.84%);
+}
+
+.trailer {
+  background-color: transparent;
+  border: 2px solid #658e76;
+}
+
+.container-img {
+  display: grid;
+  justify-self: flex-end;
+}
+
+@media (max-width: 1250px) {
+  .container-img img {
+    width: 540px;
+    height: 540px;
+  }
+  .titulo {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 1194px) {
+  .trailer {
+    display: none;
+  }
+}
+
+@media (max-width: 1118px) {
+  .container-img img {
+    width: 520px;
+    height: 520px;
+  }
+  .titulo {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    height: initial;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+  }
+  .rede-social {
+    margin-right: 0;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  .container-img img {
+    width: 400px;
+    height: 400px;
+  }
+  .container-img {
+    justify-self: center;
+    grid-row: 1;
+  }
+  .botao {
+    justify-content: center;
+  }
+  button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}

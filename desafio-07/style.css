@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    hsla(355, 100%, 64%, 1) 0%,
+    hsla(210, 26%, 15%, 1) 60%
+  );
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+.header h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.img-art {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  max-width: 470px;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  padding: 40px 80px;
+  gap: 40px;
+}
+
+.descricao h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 76px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+.personagens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.personagens p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ff4656;
+}
+
+.personagens img:hover {
+  transform: scale(1.3);
+}
+
+.omen,
+.sage,
+.sova {
+  position: relative;
+}
+
+.borda {
+  right: 20px;
+  bottom: 40px;
+  position: absolute;
+  z-index: -1;
+}
+
+.rede-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 80px;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+@media (max-width: 1150px) {
+  body {
+    height: initial;
+  }
+  .img-art {
+    display: none;
+  }
+  .main {
+    text-align: center;
+    justify-content: center;
+  }
+  .rede-social {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    overflow: initial;
+  }
+  .descricao, .rede-social {
+    margin-top: 20px;
+  }
+  .personagens, .header {
+    flex-direction: column;
+  }
+  .share {
+    display: none;
+  }
+}

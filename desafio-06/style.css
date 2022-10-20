@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./img/fundo.png") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  font-family: "B612";
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.introducao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.subtitulo {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 117px;
+}
+
+.main {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  padding: 40px;
+  margin-top: 80px;
+}
+
+.capa {
+  justify-self: flex-end;
+}
+
+.capa img {
+  border-radius: 20px;
+}
+
+.sinopse {
+  display: grid;
+  align-self: flex-start;
+  justify-content: flex-start;
+  color: #ffffff;
+  gap: 40px;
+}
+
+.sinopse p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 56ch;
+}
+
+.avaliacao {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  margin-right: 100px;
+  gap: 20px;
+}
+
+.avaliacao p,
+span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  text-transform: uppercase;
+  background: #0072d2;
+  color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  padding: 15px 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.trailer {
+  background-color: #131318;
+}
+
+.nota i {
+  color: #ffa800;
+}
+
+.nota i:nth-child(5) {
+  color: #ffffff80;
+  opacity: 50%;
+}
+
+@media (max-width: 900px) {
+  body {
+    height: initial;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+  .capa {
+    justify-self: center;
+  }
+  .sinopse {
+    text-align: center;
+    justify-content: center;
+  }
+  .botao {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .avaliacao {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .avaliacao {
+    flex-direction: column;
+  }
+  .botao {
+    flex-direction: column;
+  }
+}
+

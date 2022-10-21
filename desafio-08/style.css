@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sen";
+  background-color: #f9f9f9;
+}
+
+.container {
+  padding: 40px 160px;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #2f2f2f;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-bar i {
+  border: 2px solid #eaeaea;
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* conteúdo principal */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.main p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #2f2f2f;
+}
+
+.main h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  text-align: center;
+  color: #2f2f2f;
+}
+
+/* memoji e formas */
+
+.memoji {
+  position: absolute;
+  width: 100px;
+}
+
+.memoji:nth-child(1) {
+  top: -10px;
+  left: 0;
+}
+
+.memoji:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.memoji:nth-child(3) {
+  bottom: -20px;
+  left: 60px;
+}
+
+.memoji:nth-child(4) {
+  bottom: -10px;
+  right: 60px;
+}
+
+.forma {
+  position: absolute;
+  width: 150px;
+  z-index: -1;
+}
+
+.forma:nth-child(1) {
+  left: -25px;
+  top: -25px;
+}
+
+.forma:nth-child(2) {
+  right: -25px;
+  top: -20px;
+}
+
+.forma:nth-child(3) {
+  bottom: -20px;
+  left: 35px;
+}
+
+.forma:nth-child(4) {
+  bottom: -40px;
+  right: 35px;
+}
+
+.memoji:nth-child(5),
+.forma:nth-child(5) {
+  display: none;
+}
+
+/* botao */
+
+.container-botao {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+button {
+  background: #6610f2;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+button:nth-child(2) {
+  background-color: #ffffff;
+  border: 2px solid #eaeaea;
+  color: #2f2f2f;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fcfcfc;
+  gap: 40px;
+  padding: 40px 200px;
+  margin-top: 35px;
+}
+
+.footer h3 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #2f2f2f;
+  opacity: 0.75;
+  margin-bottom: 20px;
+}
+
+.footer h3::before {
+  content: "";
+  width: 3.5px;
+  height: 25px;
+  background: #6610f2;
+  margin-left: -10px;
+  position: absolute;
+}
+
+.footer q {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2f2f2f;
+}
+
+/* responsividade */
+
+@media (max-width: 1150px) {
+  .memoji:nth-child(3) {
+    bottom: -20px;
+    left: 5px;
+  }
+  .forma:nth-child(3) {
+    bottom: -20px;
+    left: -20px;
+  }
+  .memoji:nth-child(4) {
+    bottom: 10px;
+    right: -25px;
+  }
+  .forma:nth-child(4) {
+    bottom: -20px;
+    right: -50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .forma,
+  .memoji {
+    display: none;
+  }
+}
+
+@media (max-width: 752px) {
+  .header {
+    flex-direction: column;
+  }
+  .header h2 {
+    color: #6610f2;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .memoji-container {
+    position: relative;
+  }
+  .memoji:nth-child(5) {
+    display: initial;
+    position: initial;
+    margin: 40px 0;
+    width: 120px;
+  }
+  .forma:nth-child(5) {
+    position: absolute;
+    display: inline-block;
+    bottom: 30px;
+    left: -15px;
+  }
+  .container-botao {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 40px 100px;
+    text-align: center;
+  }
+  .footer h3 {
+    color: #6610f2;
+  }
+  .footer h3::before {
+    display: none;
+  }
+  .steve {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .main h1 {
+    font-size: 54px;
+  }
+  .main p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header h2 {
+    font-size: 28px;
+  }
+  .main h1 {
+    font-size: 32px;
+  }
+  .main p {
+    font-size: 18px;
+  }
+  button {
+    font-size: 16px;
+  }
+}

@@ -340,7 +340,7 @@ button:nth-child(2) {
     grid-template-columns: repeat(1, 350px);
   }
   .servicos .descricao {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
@@ -355,5 +355,16 @@ button:nth-child(2) {
   .servicos .galeria,
   .habilidades .galeria {
     grid-template-columns: repeat(1, 300px);
+  }
+}
+
+@media (max-width: 366px) {
+  .projetos .galeria,
+  .servicos .galeria,
+  .habilidades .galeria {
+    grid-template-columns: repeat(1, 250px);
+  }
+  .servicos .descricao {
+    font-size: 24px;
   }
 }

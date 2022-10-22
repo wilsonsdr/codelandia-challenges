@@ -40,6 +40,7 @@ body {
   background-color: RGBA(0, 0, 0, 0.2);
   padding: 20px;
   position: relative;
+  height: 100%;
 }
 
 .tag {
@@ -64,6 +65,10 @@ body {
   line-height: 18px;
   color: #fefbfb;
   cursor: pointer;
+}
+
+.box-color:hover {
+  background-color: RGBA(0, 0, 0, 0);
 }
 
 /* header */
@@ -93,6 +98,10 @@ body {
   line-height: 19px;
   cursor: pointer;
   gap: 60px;
+}
+
+.menu-navegacao .button:hover {
+  background-color: #8257e6;
 }
 
 .menu-navegacao ul {
@@ -128,10 +137,6 @@ body {
 .box-middle-container-00 {
   background: url("./img/walking-dead.png") no-repeat center top;
   background-size: cover;
-}
-
-.box-middle-container-00 .box-color {
-  height: 350px;
 }
 
 .box-middle-container-00 .box-tag {
@@ -198,14 +203,10 @@ body {
   position: relative;
 }
 
-.box-middle-01::before {
+.box-middle-01 .box-color {
   position: absolute;
-  content: "";
-  background-color: RGBA(0, 0, 0, 0.2);
   width: 200px;
-  height: 150px;
   top: 0;
-  left: 0;
 }
 
 .box-middle-01 .tag {
@@ -280,11 +281,6 @@ body {
   border-bottom: 4px solid #8257e6;
 }
 
-.box-aside-01 {
-  display: flex;
-  height: 100%;
-}
-
 .box-aside-01:nth-child(2) {
   background: url("./img/chihiro.png") no-repeat center top;
   background-size: cover;
@@ -300,11 +296,104 @@ body {
   background-size: cover;
 }
 
-.box-aside-01 .box-color {
-  background-color: RGBA(0, 0, 0, 0.4);
-}
-
 .box-aside-01 .titulo {
   font-size: 13px;
   line-height: 20px;
+}
+
+/* box-container-02 */
+
+.box-container-02 {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.box-container-02 h1 {
+  font-size: 24px;
+  line-height: 20px;
+  position: relative;
+}
+
+.box-container-02 h1::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  bottom: -20px;
+  left: 0;
+  border-bottom: 4px solid #8257e6;
+}
+
+.box-middle-container-02 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.box-middle-02 {
+  min-height: 250px;
+}
+
+.box-middle-02:nth-child(1) {
+  background: url("./img/vidas-vento.png") no-repeat center top;
+  background-size: cover;
+}
+
+.box-middle-02:nth-child(2) {
+  background: url("./img/gta5.png") no-repeat center top;
+  background-size: cover;
+}
+
+.box-middle-02:nth-child(3) {
+  background: url("./img/viking.png") no-repeat center top;
+  background-size: cover;
+}
+
+.box-middle-02:nth-child(4) {
+  background: url("./img/soul-disney.png") no-repeat center top;
+  background-size: cover;
+}
+
+.box-middle-02:nth-child(5) {
+  background: url("./img/your-name.png") no-repeat center top;
+  background-size: cover;
+}
+
+.box-middle-02:nth-child(6) {
+  background: url("./img/lol.png") no-repeat center top;
+  background-size: cover;
+}
+
+.box-middle-02 .titulo {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer .titulo {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: right;
+  color: #8257e6;
+}
+
+.footer .subtitulo {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #c4c4c4;
+  max-width: 50ch;
 }

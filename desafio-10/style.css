@@ -115,7 +115,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  background-color: RGBA(0, 0, 0, 0.4);
+  background-color: RGBA(0, 0, 0, 0.2);
   height: 350px;
   padding: 20px;
   position: relative;
@@ -179,6 +179,131 @@ body {
 .box-container-01 {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  gap: 20px;
+}
+
+.box-container-01 .box-color {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  top: 0;
+}
+
+.box-left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.box-left-01 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+.box-left-01 section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.box-left-01 section h2 {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #fefbfb;
+}
+
+.box-left-01 section p,
+span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: #c4c4c4;
+}
+
+.box-left-01 .button {
+  background: #8257e6;
+  border-radius: 3px;
+}
+
+.box-right-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.box-right-container h1 {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  color: #fefbfb;
+  position: relative;
+}
+
+.box-right-container h1::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  bottom: -20px;
+  left: 0;
+  border-bottom: 4px solid #8257e6;
+}
+
+.box-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 228px;
+  gap: 40px;
+}
+
+.box-right li:nth-child(1) {
+  background: url("./img/chihiro.png") no-repeat center top;
+  background-size: cover;
+  height: 228px;
+}
+
+.box-right li:nth-child(2) {
+  background: url("./img/rede-social.png") no-repeat center top;
+  background-size: cover;
+  height: 228px;
+}
+
+.box-right li:nth-child(3) {
+  background: url("./img/god-of-war.png") no-repeat center top;
+  background-size: cover;
+  height: 228px;
+}
+
+.box-right h2 {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #fefbfb;
+}
+
+.box-right .box-color  {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  height: 228px;
+  padding: 20px;
+  position: relative;
 }

@@ -10,8 +10,60 @@ body {
   background: #13131f;
 }
 
+/* classes reutilizaveis */
+
 .container {
   padding: 40px 80px;
+}
+
+.titulo {
+  font-family: "Lexend Deca";
+  font-size: 48px;
+  line-height: 60px;
+  color: #fefbfb;
+}
+
+.subtitulo {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #c4c4c4;
+  max-width: 38ch;
+}
+
+.box-color {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: RGBA(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative;
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: "Lexend Deca";
+  line-height: 18px;
+  color: #fefbfb;
+  background: #8257e6;
+  border-radius: 3px;
+  padding: 4px 8px;
+}
+
+.button {
+  border: 1px solid #8257e6;
+  border-radius: 30px;
+  padding: 5px 20px;
+  background-color: transparent;
+  font-family: "Lexend Deca";
+  font-size: 14px;
+  line-height: 18px;
+  color: #fefbfb;
+  cursor: pointer;
 }
 
 /* header */
@@ -57,18 +109,6 @@ body {
   transition: 0.3s;
 }
 
-.button {
-  border: 1px solid #8257e6;
-  border-radius: 30px;
-  padding: 5px 20px;
-  background-color: transparent;
-  font-family: "Lexend Deca";
-  font-size: 14px;
-  line-height: 18px;
-  color: #fefbfb;
-  cursor: pointer;
-}
-
 /* main */
 
 .main {
@@ -78,27 +118,6 @@ body {
   gap: 10px;
 }
 
-.main .titulo {
-  font-family: "Lexend Deca";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 60px;
-  color: #fefbfb;
-}
-
-.main .descricao {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
-  color: #c4c4c4;
-  max-width: 38ch;
-}
-
-/* box-container-00 */
-
 .box-container-00 {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -106,72 +125,54 @@ body {
   gap: 20px;
 }
 
-.box-middle-00 {
+.box-middle-container-00 {
   background: url("./img/walking-dead.png") no-repeat center top;
   background-size: cover;
 }
 
-.box-color {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  background-color: RGBA(0, 0, 0, 0.2);
+.box-middle-container-00 .box-color {
   height: 350px;
-  padding: 20px;
-  position: relative;
 }
 
-.box-color span {
-  position: absolute;
-  top: 20px;
-  font-family: "Lexend Deca";
+.box-middle-container-00 .box-tag {
   font-size: 14px;
-  line-height: 18px;
-  color: #fefbfb;
-  background: #8257e6;
-  border-radius: 3px;
-  padding: 4px 8px;
 }
 
-.box-color h1 {
-  font-family: "Lexend Deca";
-  font-style: normal;
+.box-middle-container-00 .titulo {
   font-size: 24px;
   line-height: 34px;
-  color: #fefbfb;
 }
 
-.box-aside-00 {
+.box-aside-container-00 {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .box-aside-00 .box-color {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  width: 100%;
   height: 165px;
-  padding: 20px;
 }
 
-.box-aside-00 aside:nth-child(1) {
+.box-aside-00 .tag {
+  font-size: 12px;
+}
+
+.box-aside-00:nth-child(1) {
   background: url("./img/attack-titan.png") no-repeat center top;
   background-size: cover;
   height: 165px;
 }
 
-.box-aside-00 aside:nth-child(2) {
+.box-aside-00:nth-child(2) {
   background: url("./img/league-of-legends.png") no-repeat center top;
   background-size: cover;
   height: 165px;
 }
 
-.box-aside-00 h2 {
-  font-family: "Lexend Deca";
+.box-aside-00 .titulo {
   font-size: 13px;
   line-height: 20px;
-  color: #fefbfb;
 }
 
 /* box-container-01 */
@@ -184,78 +185,93 @@ body {
   gap: 20px;
 }
 
-.box-container-01 .box-color {
-  position: absolute;
-  width: 200px;
-  height: 150px;
-  top: 0;
-}
-
-.box-left-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.box-middle-container-01 {
+  display: grid;
   align-items: flex-start;
+  justify-content: flex-start;
   gap: 20px;
 }
 
-.box-left-01 {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: flex-start;
+.box-middle-01 {
+  display: flex;
   gap: 20px;
   position: relative;
 }
 
-.box-left-01 section {
+.box-middle-01::before {
+  position: absolute;
+  content: "";
+  background-color: RGBA(0, 0, 0, 0.2);
+  width: 200px;
+  height: 150px;
+  top: 0;
+  left: 0;
+}
+
+.box-middle-01 .tag {
+  font-size: 10px;
+}
+
+.box-middle-01 .box-descricao {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
 
-.box-left-01 section h2 {
-  font-family: "Lexend Deca";
-  font-style: normal;
-  font-weight: 400;
+.box-middle-01 .titulo {
   font-size: 13px;
-  line-height: 20px;
   color: #fefbfb;
+  line-height: 20px;
 }
 
-.box-left-01 section p,
-span {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
+.box-middle-01 .subtitulo {
   font-size: 11px;
   line-height: 16px;
   color: #c4c4c4;
+  max-width: 48ch;
 }
 
-.box-left-01 .button {
+.box-middle-01 .button {
   background: #8257e6;
   border-radius: 3px;
 }
 
-.box-right-container {
+.box-aside-container-01 {
   display: grid;
   grid-template-columns: 1fr;
-  align-items: center;
+  grid-template-rows: auto repeat(3, 229px);
   gap: 40px;
-}
-
-.box-right-container h1 {
-  font-family: "Lexend Deca";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 20px;
-  color: #fefbfb;
   position: relative;
 }
 
-.box-right-container h1::after {
+.box-aside-container-01::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 827px;
+  border-left: 10px solid #282830;
+  top: 0;
+  left: -30px;
+}
+
+.box-aside-container-01::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 500px;
+  border-left: 10px solid #8257e6;
+  top: 20px;
+  left: -30px;
+}
+
+.box-aside-container-01 .titulo {
+  font-size: 24px;
+  line-height: 20px;
+  position: relative;
+}
+
+.box-aside-container-01 h1::after {
   content: "";
   position: absolute;
   width: 250px;
@@ -264,46 +280,31 @@ span {
   border-bottom: 4px solid #8257e6;
 }
 
-.box-right {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: 228px;
-  gap: 40px;
+.box-aside-01 {
+  display: flex;
+  height: 100%;
 }
 
-.box-right li:nth-child(1) {
+.box-aside-01:nth-child(2) {
   background: url("./img/chihiro.png") no-repeat center top;
   background-size: cover;
-  height: 228px;
 }
 
-.box-right li:nth-child(2) {
+.box-aside-01:nth-child(3) {
   background: url("./img/rede-social.png") no-repeat center top;
   background-size: cover;
-  height: 228px;
 }
 
-.box-right li:nth-child(3) {
+.box-aside-01:nth-child(4) {
   background: url("./img/god-of-war.png") no-repeat center top;
   background-size: cover;
-  height: 228px;
 }
 
-.box-right h2 {
-  font-family: "Lexend Deca";
-  font-style: normal;
-  font-weight: 400;
+.box-aside-01 .box-color {
+  background-color: RGBA(0, 0, 0, 0.4);
+}
+
+.box-aside-01 .titulo {
   font-size: 13px;
   line-height: 20px;
-  color: #fefbfb;
-}
-
-.box-right .box-color  {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  width: 100%;
-  height: 228px;
-  padding: 20px;
-  position: relative;
 }

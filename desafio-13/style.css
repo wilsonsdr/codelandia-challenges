@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./img/background.jpg") no-repeat center;
+  background-size: cover;
+  font-family: "Sora", sans-serif;
+}
+
+.container-color {
+  background: RGBA(0, 0, 0, 0.4);
+  min-height: 100vh;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 180px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  position: relative;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 2px;
+  height: 42px;
+  top: 0px;
+  left: 140px;
+}
+
+/* conteudo principal */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 180px;
+  margin: 100px 0;
+  gap: 20px;
+}
+
+.main .botao {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #111111;
+  background: #e3d2bc;
+  border: 2px solid #111111;
+  border-radius: 0px 0px 0px 24px;
+  width: 400px;
+  height: 80px;
+  cursor: pointer;
+}
+
+/* foooter */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background: #E3D2BC;
+  border-radius: 0px 0px 0px 24px;
+  border: 2px solid #111111;
+  width: 700px;
+  height: 187px;
+  gap: 20px;
+  padding: 40px;
+  position: relative;
+}
+
+.info::before {
+  position: absolute;
+  content: url("./img/video.png");
+  top: 16px;
+  left: -120px;
+}
+
+.fa-sharp {
+  position: absolute;
+  color: white;
+  top: 65px;
+  left: -20px;
+  font-size: 46px;
+  cursor: pointer;
+}
+
+.info .titulo {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #111111;
+}
+
+.info .descricao {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #585858;
+}
+
+/* responsividade */
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  .logo {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .logo::before {
+    display: none;
+  }
+  .main {
+    margin-top: 60px;
+  }
+  .main .botao:hover {
+    background-color: #30588C;
+    color: white;
+  }
+  .footer {
+    display: none;
+  }
+}

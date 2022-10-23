@@ -2,7 +2,7 @@
 
 # Descrição do projeto
 
-- Este é o desafio 010 - Codelândia
+- Este é o desafio 10 - Codelândia
 
 - A ideia do projeto é desenvolver um portal de notícias sobre o mundo nerd
 

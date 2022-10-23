@@ -271,7 +271,7 @@ body {
   position: relative;
 }
 
-.box-aside-container-01 h1::after {
+.box-aside-container-01 h2::after {
   content: "";
   position: absolute;
   width: 250px;
@@ -313,13 +313,13 @@ body {
   gap: 100px;
 }
 
-.box-container-02 h1 {
+.box-container-02 h2 {
   font-size: 24px;
   line-height: 20px;
   position: relative;
 }
 
-.box-container-02 h1::before {
+.box-container-02 h2::before {
   content: "";
   position: absolute;
   width: 250px;

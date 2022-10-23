@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./img/background.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.container {
+  background: RGBA(0, 0, 0, 0.9);
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  gap: 60px;
+}
+
+.titulo {
+  font-family: "October Crow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 83px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ecc839;
+  text-shadow: 0px 0px 8px #ff5b00;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  background: #2b0e11;
+  border: 1px solid #ee9430;
+  border-radius: 4px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ee9430;
+  padding: 12px 16px 12px 24px;
+  gap: 80px;
+}
+
+.galeria {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(6, 160px);
+  gap: 20px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #15181f;
+  height: 100%;
+}
+
+.box:nth-child(16),
+.box:nth-child(17) {
+  background: #2b0e11;
+  border: 2px solid #ee9430;
+  box-shadow: 0px 0px 8px #b63c00;
+  border-radius: 12px;
+}
+
+.box span {
+  font-family: "October Crow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 83px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ecc839;
+  text-shadow: 0px 0px 8px #ff5b00;
+}
+
+@media (max-width: 1200px) {
+  .galeria {
+    grid-template-columns: repeat(3, 250px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .galeria {
+    grid-template-columns: repeat(2, 300px);
+  }
+  .box {
+    height: 200px;
+  }
+}
+
+@media (max-width: 760px) {
+  .galeria {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+

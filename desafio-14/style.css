@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  overflow: hidden;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 120px;
+  gap: 10px;
+}
+
+.pet-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.header .titulo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  color: #3c184e;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto 2fr;
+  align-items: center;
+  padding: 40px 120px;
+  gap: 20px ;
+}
+
+.container-l {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 120px;
+}
+
+.container-l .titulo {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 80px;
+  color: #3c184e;
+}
+
+.container-l .descricao {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  color: #3c184e;
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.container-button button {
+  background: #713fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 12px 32px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.container-r {
+  position: relative;
+  place-self: end;
+}
+
+.container-r::before {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  top: -96.6px;
+  background: linear-gradient(180deg, #3cb7de 0%, #3fa3ff 100%);
+  border-radius: 500px 0px 0px 500px;
+  transform: rotate(-17.91deg);
+}
+
+.container-r::after {
+  content: url("./img/racao.png");
+  position: absolute;
+  top: 300px;
+  right: 120px;
+}
+
+.container-r .cachorro {
+  rotate: -19deg;
+}
+
+@media (max-width: 1070px) {
+  .header {
+    justify-content: center;
+  }
+  .main {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 40px;
+  }
+  .container-l {
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+  }
+  .container-button, .container-r {
+    place-self: center;
+  }
+  .container-r {
+    margin-left: 140px;
+  }
+  .container-r::before, .container-r::after {
+    display: none;
+  }
+  .container-r .cachorro {
+    rotate: 0deg;
+  }
+} 

@@ -2,7 +2,7 @@
 
 # Descrição do projeto
 
-- Este é o desafio 11 - Codelândia
+- Este é o desafio 12 - Codelândia
 
 - A ideia do projeto é desenvolver uma página de uma pizzaria
 

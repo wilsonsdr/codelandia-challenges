@@ -2,7 +2,7 @@
 
 # Descrição do projeto
 
-- Este é o desafio 12 - Codelândia
+- Este é o desafio 13 - Codelândia
 
 - A ideia do projeto é desenvolver um poster do filme Arcane
 

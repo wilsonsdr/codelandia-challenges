@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: url(../img/batman.png) no-repeat top;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container-color {
+  background: RGBA(0, 0, 0, 0.6);
+  min-height: 100vh;
+}

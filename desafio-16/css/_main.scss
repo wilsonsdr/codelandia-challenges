@@ -1,0 +1,44 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 20px;
+
+  .tag {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: $secondary-color;
+    background: $tertiary-color;
+    border-radius: 0px 8px;
+    padding: 4px 12px;
+  }
+
+  .rate {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: $primary-color;
+
+    .star {
+      color: $secondary-color;
+    }
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 56px;
+    color: $primary-color;
+  }
+
+  .sinopse {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: $primary-color;
+    max-width: 46ch;
+  }
+}

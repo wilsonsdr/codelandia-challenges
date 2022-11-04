@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+
+  .logo {
+    font-family: "Mukta", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 66px;
+    background: linear-gradient(
+      264.26deg,
+      #ff267a 0%,
+      $secondary-color 101.03%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    a {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 33px;
+      color: $primary-color;
+    }
+  }
+}

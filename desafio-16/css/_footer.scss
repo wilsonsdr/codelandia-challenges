@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+
+  .title {
+    font-family: "Mukta";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 66px;
+    color: $primary-color;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    a {
+      color: $primary-color;
+      font-size: 27px;
+    }
+  }
+}

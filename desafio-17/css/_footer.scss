@@ -1,0 +1,27 @@
+.footer {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 213px;
+  background-color: $bg-color;
+  height: 100px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    color: red;
+
+    i {
+      font-size: 34px;
+      color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  position: relative;
+
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $bg-color;
+    width: 100vw;
+    height: 100px;
+
+    .marvel {
+      padding: 4px;
+      background-color: $secondary-color;
+      margin-left: 190px;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      a {
+        color: $primary-color;
+        font-size: 20px;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .burguer {
+      display: none;
+      cursor: pointer;
+
+      .bar {
+        display: block;
+        width: 28px;
+        height: 3px;
+        border-radius: 2px;
+        margin: 5px auto;
+        background-color: $primary-color;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    background-color: $bg-color;
+    height: 100vh;
+    width: 100px;
+    top: 0;
+    left: 0;
+
+    .search {
+      margin-bottom: 40px;
+    }
+
+    i {
+      font-size: 34px;
+      color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+
+    .box-01 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+
+      .social-media {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        color: red;
+      }
+    }
+  }
+}

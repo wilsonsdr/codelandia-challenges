@@ -4,7 +4,7 @@
 
 - Este é o desafio 16 - Codelândia
 
-- A ideia do projeto é desenvolver um página de filmes
+- A ideia do projeto é desenvolver uma página de filmes
 
 - Todo o foco do projeto é voltado para HTML e CSS
 

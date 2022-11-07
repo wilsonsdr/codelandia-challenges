@@ -1,0 +1,68 @@
+.footer {
+  background: url(../img/footer-bg.png) no-repeat;
+  background-size: cover;
+  max-height: 382px;
+
+  .contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    background: RGBA(0, 0, 0, 0.8);
+    min-height: 382px;
+    padding: 56px 100px;
+    text-align: center;
+    gap: 20px;
+
+    .title {
+      font-size: 2.5rem;
+      line-height: 50px;
+      color: $primary-color;
+    }
+
+    .descr {
+      color: lighten($quaternary-color, 40%);
+    }
+
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 60px;
+      width: 450px;
+      position: relative;
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: $primary-color;
+        font-size: 1.125rem;
+        line-height: 22px;
+      }
+
+      .line {
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 2px;
+        bottom: -10px;
+        left: 0;
+        background-color: lighten($quaternary-color, 40%);
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+    p {
+      font-size: 20px;
+      line-height: 25px;
+      color: $tertiary-color;
+    }
+  }
+}

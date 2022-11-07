@@ -1,0 +1,213 @@
+.main {
+  .introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    background-color: $secondary-color;
+    padding: 20px 100px;
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      .title {
+        line-height: 60px;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .application {
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    background-color: $primary-color;
+    height: 500px;
+    padding: 56px 100px;
+
+    .title {
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 50px;
+    }
+
+    .services {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+
+        i {
+          color: $highlight-color;
+          font-size: 60px;
+        }
+
+        .title {
+          font-size: 1.125rem;
+          line-height: 23px;
+        }
+
+        .descr {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+    background-color: $secondary-color;
+    padding: 20px 100px;
+
+    .app {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+
+      .title {
+        font-size: 2rem;
+        line-height: 40px;
+      }
+
+      .descr {
+        font-size: 1rem;
+      }
+
+      .platforms {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: $primary-color;
+    height: 800px;
+    padding: 56px 100px;
+    gap: 20px;
+
+    .title {
+      font-size: 2.5rem;
+      line-height: 50px;
+    }
+
+    .descr {
+      text-align: center;
+    }
+
+    .category {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 60px;
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        gap: 60px;
+        border-radius: 8px;
+
+        &:nth-child(odd) {
+          background-color: $secondary-color;
+
+          .title {
+            font-size: 1.5rem;
+            line-height: 30px;
+          }
+
+          .price {
+            font-size: 50px;
+            line-height: 59px;
+            font-weight: bold;
+            position: relative;
+
+            span {
+              font-size: 26px;
+              line-height: 30px;
+            }
+
+            &:before {
+              content: "R$";
+              font-size: 1.125rem;
+              position: absolute;
+              top: -10px;
+              left: -25px;
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          background-color: $tertiary-color;
+          color: $primary-color;
+          position: relative;
+
+          .title {
+            color: $primary-color;
+            font-size: 1.5rem;
+            line-height: 30px;
+          }
+
+          .chosen {
+            position: absolute;
+            background-color: $highlight-color;
+            color: $primary-color;
+            border-radius: 15px;
+            padding: 5px 32px;
+            top: 90px;
+          }
+
+          .price {
+            font-size: 50px;
+            line-height: 59px;
+            font-weight: bold;
+            position: relative;
+
+            span {
+              font-size: 26px;
+              line-height: 30px;
+            }
+
+            &:before {
+              content: "R$";
+              font-size: 1.125rem;
+              position: absolute;
+              top: -10px;
+              left: -25px;
+            }
+          }
+
+          .descr {
+            color: lighten($quaternary-color, 40%);
+          }
+        }
+      }
+    }
+  }
+}

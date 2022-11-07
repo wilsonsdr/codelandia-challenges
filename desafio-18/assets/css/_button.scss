@@ -1,0 +1,21 @@
+.button {
+  box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: $highlight-color;
+  color: $primary-color;
+
+  &:hover {
+    background-color: darken($highlight-color, 10%);
+  }
+}
+
+.register {
+  padding: 16px 36px;
+}
+
+.sign {
+  padding: 8px 80px;
+}

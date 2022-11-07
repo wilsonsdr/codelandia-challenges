@@ -9,3 +9,14 @@
 body {
   font-family: "Sora", sans-serif;
 }
+
+.title {
+  font-style: normal;
+  color: $tertiary-color;
+  font-weight: 600;
+}
+
+.descr {
+  color: $quaternary-color;
+  line-height: 26px;
+}

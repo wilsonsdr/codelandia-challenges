@@ -5,7 +5,7 @@
     justify-content: space-between;
     height: 600px;
     background-color: $secondary-color;
-    padding: 20px 100px;
+    padding: 56px;
 
     .about {
       display: flex;
@@ -26,7 +26,7 @@
     justify-items: center;
     background-color: $primary-color;
     height: 500px;
-    padding: 56px 100px;
+    padding: 56px;
 
     .title {
       text-align: center;
@@ -64,12 +64,12 @@
   }
 
   .download {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: space-between;
     height: 500px;
     background-color: $secondary-color;
-    padding: 20px 100px;
+    padding: 56px;
 
     .app {
       display: flex;
@@ -105,7 +105,7 @@
     justify-items: center;
     background-color: $primary-color;
     height: 800px;
-    padding: 56px 100px;
+    padding: 56px;
     gap: 20px;
 
     .title {
@@ -211,3 +211,4 @@
     }
   }
 }
+

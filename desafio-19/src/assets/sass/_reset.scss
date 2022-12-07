@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: $bgColor1;
+    font-family: "Inter", sans-serif;
+}
+
+img {
+    display: block;
+}
+
+a {
+    display: inline-block;
+}

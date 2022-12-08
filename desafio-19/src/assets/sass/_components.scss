@@ -1,6 +1,6 @@
 /* #region variaveis*/
 $bgColor1: #121212;
-$bgColor2: #111111;
+$bgColor2: #151515;
 $primaryColor: #00D2DF;
 $secondaryColor: #ffffff;
 $neutral: #c4c4c4;
@@ -28,6 +28,13 @@ $neutral: #c4c4c4;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+}
+
+@mixin descr {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: $neutral;
 }
 
 @mixin button {

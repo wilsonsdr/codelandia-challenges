@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./src/assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04738758ea.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,17 +18,28 @@
         <nav>
             <ul class="navbar">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Experiência</a></li>
-                <li><a href="#">Projetos</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
             </ul>
-            <ul class="burguer">
+            <div class="burguer">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </ul>
+            </div>
         </nav>
     </header>
+    <main class="main">
+        <section class="intro" id="about">
+            <p class="text">Olá, Eu Sou</p>
+            <h1 class="title">WILSON REIS</h1>
+            <p class="text">Desenvolvedor Front-end & UI Designer.</p>
+            <div class="buttons">
+                <button class="button"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</button>
+                <button class="button"><i class="fa-brands fa-github"></i> GitHub</button>
+            </div>
+        </section>
+    </main>
     <script src="./src/assets/js/main.js"></script>
 </body>
 

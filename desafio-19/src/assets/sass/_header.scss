@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 40px 180px;
 
     .title {
         @include title;
@@ -57,23 +57,25 @@
 }
 
 /* #region responsividade*/
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .header {
         position: fixed;
         width: 100%;
+        z-index: 999;
+        background-color: $bgColor1;
     }
 
     .navbar {
         position: fixed;
         left: -100%;
-        top: 60px;
+        top: 100px;
         text-align: center;
         flex-direction: column;
         padding: 20px 0;
         width: 100%;
         transition: 0.3s;
         border-radius: 0 0 20px 20px;
-        background-color: #000;
+        background:  linear-gradient(to right, #9358F7, #D24074);
 
         li {
             margin: 5px auto;
@@ -81,6 +83,10 @@
 
         &.active {
             left: 0;
+        }
+
+        a {
+            color: $secondaryColor;
         }
     }
 

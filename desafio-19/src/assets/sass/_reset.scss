@@ -6,7 +6,12 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    max-width: 1440px;
     background-color: $bgColor1;
     font-family: "Inter", sans-serif;
 }

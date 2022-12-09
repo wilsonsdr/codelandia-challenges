@@ -58,6 +58,10 @@
 
 /* #region responsividade*/
 @media (max-width: 1100px) {
+    html {
+        scroll-padding-top: 100px;
+    }
+
     .header {
         position: fixed;
         width: 100%;

@@ -65,7 +65,7 @@
         }
     }
 
-    .aboutMe {
+    .profile {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -75,6 +75,7 @@
         }
 
         .title {
+            @include title;
             font-size: 24px;
             text-transform: uppercase;
             margin-bottom: 40px;
@@ -94,6 +95,7 @@
 
     .social-media {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: 34px;
 
@@ -105,7 +107,84 @@
 
     .buttons {
         @extend .buttons;
-        margin: 0;
+        margin-top: 24px;
+    }
+}
+
+.experience {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 100px 180px;
+
+    .title {
+        @include title;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        color: $secondaryColor;
+    }
+
+    .jobs {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: start;
+        gap: 88px;
+
+        ul {
+            li {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: $neutral;
+                padding: 18px 32px;
+
+                &:nth-child(1) {
+                    color: $secondaryColor;
+                    background-color: $bgColor2;
+                    border-left: 4px solid #00d2df;
+                }
+            }
+        }
+
+        .experience-description {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 26px;
+
+            .experience-role {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                color: $secondaryColor;
+                width: 100%;
+                gap: 20px;
+
+                .title {
+                    text-transform: initial;
+                    margin: 0;
+
+                    .experience-date {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .text {
+                @include text;
+                font-size: 16px;
+                color: $primaryColor;
+            }
+
+            .descr {
+                @include descr;
+                max-width: 57ch;
+            }
+        }
     }
 }
 
@@ -121,8 +200,40 @@
     .about {
         grid-template-columns: 1fr;
 
-        .aboutMe {
+        .photo {
+            width: 100%;
+            height: 150px;
+        }
+
+        .profile {
             grid-row: 1;
         }
     }
 }
+
+@media (max-width: 1060px) {
+    .experience {
+        .jobs {
+            grid-template-columns: 1fr;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                overflow: hidden;
+
+                li {
+                    font-size: 14px;
+
+                    &:nth-child(1) {
+                        color: $secondaryColor;
+                        background-color: $bgColor2;
+                        border-left: 0;
+                        border-bottom: 4px solid #00d2df;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* #endregion */

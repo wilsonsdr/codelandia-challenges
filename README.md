@@ -1,1 +1,1 @@
-Este repositório é para guardar os códigos dos desafios da Codelândia
+This repository is for storing the codes of the Codelândia challenges.
